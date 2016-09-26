@@ -5,14 +5,30 @@
     <title>In Today's Money</title>
   </head>
   <body>
-    <h1>The year is 1916, and you have...</h1>
+    <p>The year is <span>
+    <select id="year">
+    </select>
+  </span>and you have...<span>
     <form id="calculator">
       <input id="starting-figure" type="text" placeholder="£"></input>
       <input id="submit" type="submit"></input>
     </form>
+  </span><p>
     <h3>Which in today's money is <span id="final-figure"></span></h3>
     <script src='src/Calculation.js'></script>
     <script src='js/jquery-3.1.0.min.js'></script>
     <script src='js/interface.js'></script>
+    <script>
+      var min = 1900,
+      max = min + 50,
+      select = document.getElementById('year');
+
+      for (var i = min; i<=max; i++){
+         var opt = document.createElement('option');
+         opt.value = i;
+         opt.innerHTML = i;
+         select.appendChild(opt);
+      }
+      </script>
   </body>
 </html>
