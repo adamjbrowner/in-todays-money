@@ -1,0 +1,25 @@
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family: "Bellerose";
+  height: 100%;
+  background-color: #762020;
+  font-size: 30pt;
+}
+
+header {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #134747
+}
+
+p {
+  margin: 10px;
+}
+
+.coin {
+  position: relative;
+  height: 50px;
+  top: 20px;
+}
